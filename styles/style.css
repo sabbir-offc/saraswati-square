@@ -159,6 +159,7 @@ margin: 15px auto;
     margin-top: 50px;
     align-items: center;
     justify-content: space-around;
+    animation: HighlightText 2s ease-out;
 
 }
   .highlights-text-title{
@@ -175,4 +176,28 @@ margin: 15px auto;
   .fa-solid{
     font-size: 30px;
     color: #995E36;
+  }
+  .highlights>div>.section-title{
+    animation: HighlightTitle 1s ease-out;
+  }
+
+  @keyframes HighlightText {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes HighlightTitle {
+    from {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
