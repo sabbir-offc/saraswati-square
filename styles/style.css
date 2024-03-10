@@ -140,3 +140,39 @@ body{
       transform: translateX(0);
     }
   }
+
+
+  /* Highlight section style */
+  .highlights{
+    background-color: #EDE2D4;
+    text-align: center;
+    padding: 100px 0;
+    
+  }
+
+  .highlights>.container>.section-title>h4{
+width: 60%;
+margin: 15px auto;
+  }
+.highlights-text{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+  .highlights-text-title{
+    font-size: 16px;
+    margin: 20px 0;
+    color: rgb(55, 55, 55);
+    font-weight: 500;
+  }
+  .highlights-text-description{
+    color: rgb(84, 83, 83);
+    width: 80%;
+    margin: auto;
+  }
+  .fa-solid{
+    font-size: 30px;
+    color: #995E36;
+  }
