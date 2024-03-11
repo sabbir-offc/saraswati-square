@@ -165,7 +165,7 @@ margin: 15px auto;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
-    animation: HighlightText 2s ease-out;
+    animation: SlideFromBottom 2s ease-out;
 
 }
   .highlights-text-title{
@@ -184,10 +184,10 @@ margin: 15px auto;
     color: #995E36;
   }
   .highlights>div>.section-title{
-    animation: HighlightTitle 1s ease-out;
+    animation: SlideFromTop 1s ease-out;
   }
 
-  @keyframes HighlightText {
+  @keyframes SlideFromBottom {
     from {
       opacity: 0;
       transform: translateY(50%);
@@ -197,7 +197,7 @@ margin: 15px auto;
       transform: translateY(0);
     }
   }
-  @keyframes HighlightTitle {
+  @keyframes SlideFromTop {
     from {
       opacity: 0;
       transform: translateY(-50%);
@@ -207,3 +207,107 @@ margin: 15px auto;
       transform: translateY(0);
     }
   }
+
+
+  /* amenities style */
+  .amenities{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0; 
+  background-image: url(https://saraswatisquare.in/media/images/amenities/amenities-bg-1.webp);
+  position: relative;
+}
+
+.amenities::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+  }
+  .amenities-container{
+    position: relative;
+  }
+.amenities>div>.section-title>h3,.amenities>div>.section-title>h4{
+    color: white;
+    text-align: center;
+}
+.amenities-btn{
+  margin: 0 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.amenities-content{
+  text-align: center;
+  color: white;
+  animation: SlideFromBottom 1s ease-out;
+}
+.amenities-container .section-title{
+  animation: SlideFromTop 1s ease-out;
+}
+.amenities-btn>button{
+  padding: 15px 20px;
+  background-color: white;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  border: 1px solid white;
+  font-weight: 500;
+  cursor: pointer;
+}
+#amenities-btn-transition{
+  position: relative;
+    display: block;
+    line-height: 1;
+    border: 1px solid #fff;
+    text-align: center;
+    color: white;
+    background: transparent;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+
+}
+#amenities-btn-transition:hover{
+background-color: white;
+color: black;
+}
+.amenities-content>h3{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 60px;
+  
+}
+.amenities-tabs-items{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.amenities-tabs-items-inner p {
+  text-align: left;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.amenities-tabs-items-inner p::before {
+  position: absolute;
+  content: "";
+  background-image: url(https://saraswatisquare.in/media/images/amenities/check.svg);
+  height: 15px;
+  width: 15px;
+  left: -25px;
+  top: 5px;
+}
+
+
+
+/* Gallery */
