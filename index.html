@@ -33,6 +33,7 @@
         </div>
     </nav>
     <!-- Navbar end -->
+
     <!-- Banner Section start -->
     <section class="banner">
         <img src="assets/banner-1.webp" class="banner-img" alt="Banner">
@@ -155,6 +156,47 @@
     </section>
     <!-- AMENITIES End -->
 
+    <!-- Gallery Start -->
+    <section class="gallery container">
+        <div class="section-title fade-in-top">
+            <h4>Gallery</h4>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div class="slider-item">
+                    <img src="assets/gallery1.webp" alt="Image 1">
+                    <div class="overlay">
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image2.jpg" alt="Image 2">
+                    <div class="overlay">
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image3.jpg" alt="Image 3">
+                    <div class="overlay">
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev-button">Prev</button>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+
+    </section>
+    <!-- Gallery end -->
+
 
     <!-- About Developer Start -->
     <section class="about-developer">
@@ -178,6 +220,7 @@
             </div>
         </div>
     </section>
+    <!-- About Developer end -->
 
     <!-- Footer section-->
     <footer class="section footer" id="footer">
@@ -225,7 +268,8 @@
                                 </picture>
                             </div>
                             <div class="footer-col-qr-text">
-                                <p>Maha RERA No :- P51800050901, <a href="https://maharera.mahaonline.gov.in"
+                                <p>Maha RERA No :- P51800050901, <a id="footer-col-qr-link"
+                                        href="https://maharera.mahaonline.gov.in"
                                         target="_blank">https://maharera.mahaonline.gov.in </a> under registered
                                     projects</p>
                             </div>
@@ -261,6 +305,7 @@
             </div>
         </div>
     </footer>
+    <script src="/script/index.js"></script>
 </body>
 
 </html>
